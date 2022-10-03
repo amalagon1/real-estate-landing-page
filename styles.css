@@ -1,0 +1,249 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;700&family=Overpass:wght@400;700&display=swap');
+
+:root {
+    --Gold: #c2ab92;
+    --Lighter-Gold: hsl(46, 69%, 47%);
+    --Light-Black: #383838;
+    --Almost-Black: hsl(0, 0%, 8%);
+}
+
+body{
+    font-family: 'Cormorant Garamond', serif;
+}
+
+.main-nav{
+    display: flex;
+    flex-basis: 100%;
+    padding-left: 20px;
+    padding-right: 0px;
+    height: 50px;
+    /* width: 100%; */
+    color: white;
+    background: black;
+    /* border: solid black; */
+    border: none;
+}
+
+.main-nav__items {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+}
+
+.main-nav__links {
+    display: flex;
+    width: 55%;
+    justify-content: space-around;
+    list-style: none;
+}
+
+.btn {
+    padding: 7px;
+    background: var(--Lighter-Gold);
+    border: transparent;
+    cursor: pointer;
+}
+
+.main-form-container {
+    border: solid black;
+}
+
+.hero {
+    background: url('./images/house-main.jpg') center/cover no-repeat;
+    /* height: calc(100vh - 20px); */
+    height: 716px;
+    /* position: relative; */
+}
+
+.heading {
+    margin-top: 30px;
+    margin-left: 20px;
+    position: absolute;
+    font-family: 'Cormorant Garamond', serif;
+    color: var(--Lighter-Gold);
+    position: absolute;
+    top: 5%;
+    font-size: 2rem;
+}
+
+.main-form {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 20%;
+    right: 5%;
+}
+
+.form-title {
+    background: var(--Lighter-Gold);
+    padding: 0 30px;
+}
+
+.main-form input:not([type="button"]) {
+    height: 2rem;
+    border-radius: 5px;
+    border: var(--Lighter-Gold) 2px solid;
+    margin-top: 10px;
+    color: black;
+    width: 300px;
+    /* vertical-align: middle; */
+    /* line-height: 20px; */
+}
+
+.main-form label {
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin-top: 10px;
+}
+
+/* .main-form button {
+    margin-top: 5px;
+    border-radius: 4px;
+    border: transparent;
+    width: 50%;
+} */
+
+#inputBtn {
+    /* vertical-align: middle; */
+    height: 2rem;
+    /* margin-top: 10px; */
+    width: 30px;
+    border: transparent;
+    border-radius: 3px;
+    background: var(--Lighter-Gold);
+    color: black;
+    cursor: pointer;
+    /* line-height: 20px; */
+}
+
+
+.mission-statement {
+    color: white;
+    background: black;
+    height: 400px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mission-img {
+    height: 100%;
+    width: 40%;
+    position: relative;
+    right: 4%;
+    background: linear-gradient(to bottom, rgba(213,182,156,0.3) 10%, transparent),
+    url('./images/male-gd3424fe07_1920.jpg') center/cover no-repeat border-box; 
+}
+
+.mission-text {
+    width: 60%;
+}
+
+.mission-text h1 {
+    color: var(--Lighter-Gold);
+    margin-bottom: 40px;
+    font-size: 2.5rem;
+}
+
+.mission-text p {
+    font-size: 1.5rem;
+}
+
+.properties {
+    height: 450px;
+    text-align: center;
+    padding-top: 40px;
+}
+
+.cards-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.card {
+    width: 300px;
+    box-shadow: 10%;
+    transition: transform 200ms ease-in-out;
+    padding-bottom: 15px;
+    border-radius: 3px;
+    overflow: hidden;
+
+}
+
+.card:hover {
+    transform: translateY(-1rem);
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.card img {
+    width: 100%;
+   
+}
+
+.card p {
+    margin-top: 15px;
+}
+
+.card button {
+    margin-top: 20px;
+    padding: 12px;
+    width: 150px;
+    background: black;
+    color: var(--Lighter-Gold);
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+}
+
+.testimonials {
+    height: 550px;
+    background: black;
+    color: var(--Lighter-Gold);
+    text-align: center;
+}
+
+.testimonials h1 {
+    /* margin-top: 30px;  */
+    position: relative;
+    top: 7%;
+}
+
+.testimonial-container{
+    display: flex;
+}
+
+.testimonial {
+    /* border: solid red; */
+    display: inline-block;
+    width: 30%;
+    /* height: calc(100% - 29px); */
+    height: 70%;
+    vertical-align: middle;
+    position: relative;
+    top: 20%;
+}
+
+.testimonial img {
+    width: 90%;
+    clip-path: circle(40%);
+}
+
+.testimonial p {
+    color: white;
+}
+
+.contact {
+    height: 600px;
+    background: url("./images/sun-gdbdad190a_1920.jpg") center/cover;
+}
+
